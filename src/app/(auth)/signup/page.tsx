@@ -14,6 +14,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { BrandLogo } from "@/components/ui/brand-logo";
 import { MessageSquare, CheckCircle, UsersRound } from "lucide-react";
 
 // `useSearchParams` opts the component out of static prerendering
@@ -131,20 +132,16 @@ function SignupPageInner() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <Card className="w-full max-w-md border-border bg-card">
         <CardHeader className="items-center text-center">
-          <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-            {inviteToken ? (
-              <UsersRound className="h-6 w-6 text-primary" />
-            ) : (
-              <MessageSquare className="h-6 w-6 text-primary" />
-            )}
+          <div className="mb-3 flex items-center justify-center">
+            <BrandLogo size="lg" priority={true} />
           </div>
-          <CardTitle className="text-xl text-foreground">
-            {inviteToken ? "Create account & join" : "Create account"}
+          <CardTitle className="text-xl font-bold font-serif tracking-wide text-foreground">
+            {inviteToken ? "Create account & join" : "Create your Senco Gold & Diamonds account"}
           </CardTitle>
           <CardDescription className="text-muted-foreground">
             {inviteToken
               ? "Verify your email, then accept the invitation to join your team."
-              : "Get started with CRM Template for WhatsApp"}
+              : "Get started with Senco Gold & Diamonds (Balichak) WhatsApp Panel"}
           </CardDescription>
         </CardHeader>
         <CardContent>

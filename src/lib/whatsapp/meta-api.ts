@@ -651,9 +651,9 @@ export async function deleteMessageTemplate(
     method: 'DELETE',
     headers: { Authorization: `Bearer ${accessToken}` },
   })
-  // Treat a 404 as a no-op — the template is already gone on Meta's
-  // side, and we still want the local row removed.
-  if (response.status === 404) return
+  // Treat a 404 or 400 (Invalid parameter / template not in this WABA) as a no-op
+  // so local cleanup of old-account or orphaned templates succeeds.
+  if (response.status === 404 || response.status === 400) return
   if (!response.ok) {
     await throwMetaError(response, `Meta API error: ${response.status}`)
   }

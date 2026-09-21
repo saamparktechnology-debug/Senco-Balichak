@@ -51,6 +51,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import { BrandLogo } from '@/components/ui/brand-logo';
 import { createClient } from '@/lib/supabase/client';
 
 interface PeekOk {
@@ -293,16 +294,16 @@ export default function JoinPage() {
   // ----- Peek OK -----
   const inviteHeader = (
     <CardHeader className="items-center text-center">
-      <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-        <UsersRound className="h-6 w-6 text-primary" />
+      <div className="mb-3 flex items-center justify-center">
+        <BrandLogo size="lg" priority={true} />
       </div>
-      <CardTitle className="text-xl text-foreground">
-        You&apos;re invited to{' '}
+      <CardTitle className="text-xl font-bold text-foreground">
+        You&apos;re invited to join{' '}
         <span className="text-primary">{peek.account_name}</span>
       </CardTitle>
       <CardDescription className="text-muted-foreground">
-        You&apos;ll join as{' '}
-        <span className="inline-flex items-center gap-1 text-foreground">
+        on Senco Gold & Diamonds (Balichak) WhatsApp Panel as{' '}
+        <span className="inline-flex items-center gap-1 font-medium text-foreground">
           <ShieldCheck className="size-3.5 text-primary" />
           {ROLE_LABEL[peek.role]}
         </span>

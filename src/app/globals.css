@@ -148,6 +148,20 @@ html[data-mode="light"] {
 /* ---- ACCENT: primary color ---- */
 
 :root,
+html[data-theme="whatsapp"] {
+  --primary: oklch(0.68 0.19 155);
+  --primary-foreground: oklch(0.12 0.04 155);
+  --primary-hover: oklch(0.74 0.18 155);
+  --primary-soft: oklch(0.68 0.19 155 / 0.14);
+  --primary-soft-2: oklch(0.68 0.19 155 / 0.24);
+  --ring: oklch(0.68 0.19 155);
+  --chart-1: oklch(0.68 0.19 155);
+  --chart-2: oklch(0.75 0.16 175);
+  --sidebar-primary: oklch(0.68 0.19 155);
+  --sidebar-primary-foreground: oklch(0.12 0.04 155);
+  --sidebar-ring: oklch(0.68 0.19 155);
+}
+
 html[data-theme="violet"] {
   --primary: oklch(0.526 0.247 293);
   --primary-foreground: oklch(0.985 0 0);
