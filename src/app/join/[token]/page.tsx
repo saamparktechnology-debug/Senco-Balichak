@@ -52,6 +52,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import { BrandLogo } from '@/components/ui/brand-logo';
 import { createClient } from '@/lib/supabase/client';
 
 interface PeekOk {
@@ -282,8 +283,8 @@ export default function JoinPage() {
   // ----- Peek OK -----
   const inviteHeader = (
     <CardHeader className="items-center text-center">
-      <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-        <UsersRound className="h-6 w-6 text-primary" />
+      <div className="mb-3 flex items-center justify-center">
+        <BrandLogo size="lg" priority={true} />
       </div>
       <CardTitle className="text-xl text-foreground">
         {t.rich('invitedTo', {

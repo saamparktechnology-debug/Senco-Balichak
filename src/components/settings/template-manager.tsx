@@ -699,7 +699,13 @@ export function TemplateManager() {
               <Input
                 placeholder={t('namePlaceholder')}
                 value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                onChange={(e) => {
+                  const sanitized = e.target.value
+                    .toLowerCase()
+                    .replace(/\s+/g, '_')
+                    .replace(/[^a-z0-9_]/g, '');
+                  setForm({ ...form, name: sanitized });
+                }}
                 disabled={editingId !== null}
                 className="bg-muted border-border text-foreground placeholder:text-muted-foreground disabled:opacity-60 disabled:cursor-not-allowed"
               />

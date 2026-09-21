@@ -299,8 +299,7 @@ export async function DELETE(
           metaTemplateId: existing.meta_template_id,
         })
       } catch (e) {
-        const message = e instanceof Error ? e.message : 'Meta delete failed.'
-        return NextResponse.json({ error: message }, { status: 502 })
+        console.warn('Meta delete warning (proceeding to remove local row):', e instanceof Error ? e.message : e)
       }
     }
 

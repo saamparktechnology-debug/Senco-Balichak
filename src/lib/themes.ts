@@ -14,6 +14,7 @@
  */
 
 export const THEME_IDS = [
+  "whatsapp",
   "violet",
   "emerald",
   "cobalt",
@@ -23,9 +24,9 @@ export const THEME_IDS = [
 
 export type ThemeId = (typeof THEME_IDS)[number];
 
-export const DEFAULT_THEME: ThemeId = "violet";
+export const DEFAULT_THEME: ThemeId = "whatsapp";
 
-export const STORAGE_KEY = "wacrm.theme";
+export const STORAGE_KEY = "senco.theme";
 
 /**
  * MODE — the light/dark dimension, orthogonal to the accent theme.
@@ -37,7 +38,7 @@ export const STORAGE_KEY = "wacrm.theme";
  * opt-in eye-strain-friendly alternative.
  *
  * Persisted under its own localStorage key so it composes freely
- * with the accent choice (you can run Violet-light or Violet-dark).
+ * with the accent choice (you can run WhatsApp-light or WhatsApp-dark).
  */
 export const MODES = ["light", "dark"] as const;
 
@@ -45,7 +46,7 @@ export type Mode = (typeof MODES)[number];
 
 export const DEFAULT_MODE: Mode = "dark";
 
-export const MODE_STORAGE_KEY = "wacrm.mode";
+export const MODE_STORAGE_KEY = "senco.mode";
 
 export function isMode(value: unknown): value is Mode {
   return (
@@ -68,16 +69,22 @@ export interface ThemeMeta {
 
 export const THEMES: ReadonlyArray<ThemeMeta> = [
   {
-    id: "violet",
-    name: "Violet",
-    tagline: "The default — confident, slightly playful.",
-    swatch: "oklch(0.526 0.247 293)",
+    id: "whatsapp",
+    name: "WhatsApp Green",
+    tagline: "The signature Senco WhatsApp vibrant messaging theme.",
+    swatch: "oklch(0.68 0.19 155)",
   },
   {
     id: "emerald",
     name: "Emerald",
-    tagline: "Growth-coded, nods at messaging without copying WhatsApp green.",
+    tagline: "Growth-coded, deep messaging emerald tone.",
     swatch: "oklch(0.62 0.16 162)",
+  },
+  {
+    id: "violet",
+    name: "Violet",
+    tagline: "Confident, modern purple accent.",
+    swatch: "oklch(0.526 0.247 293)",
   },
   {
     id: "cobalt",
