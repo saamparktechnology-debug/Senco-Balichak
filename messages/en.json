@@ -15,7 +15,7 @@
     "createAccount": "Create account"
   },
   "Sidebar": {
-    "title": "Senco Gold & Diamonds (Balichak) WhatsApp Panel",
+    "title": "Senco Gold & Diamonds WhatsApp Panel",
     "primaryNav": "Primary",
     "dashboard": "Dashboard",
     "inbox": "Inbox",
@@ -1383,7 +1383,7 @@
       "done": "Done",
       "dialogTitle": "Invite a teammate",
       "networkError": "Could not reach the server. Try again?",
-      "fallbackAccountName": "our wacrm account",
+      "fallbackAccountName": "our Senco Gold & Diamonds account",
       "dialogDesc": "Generate a one-time invite link. Share it via WhatsApp, Slack, or any channel you like — no email service required.",
       "roleLabel": "Role",
       "validForLabel": "Link valid for",
@@ -1400,7 +1400,7 @@
       "labelTooLong": "Label must be {max} characters or fewer",
       "copied": "Invite link copied",
       "clipboardBlocked": "Clipboard blocked — copy the link manually",
-      "whatsappMessage": "Join {accountName} on Senco Gold & Diamonds (Balichak) WhatsApp Panel using this link (valid for {expiresInDays} days): {url}"
+      "whatsappMessage": "Join {accountName} on Senco Gold & Diamonds WhatsApp Panel using this link (valid for {expiresInDays} days): {url}"
     },
     "tagsAndFields": {
       "title": "Fields & tags",

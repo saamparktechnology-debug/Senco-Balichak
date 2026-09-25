@@ -88,7 +88,7 @@ function LoginPageInner() {
           <CardDescription className="text-muted-foreground">
             {inviteToken
               ? t('descAccept')
-              : "Sign in to Senco Gold & Diamonds (Balichak) WhatsApp Panel"}
+              : "Sign in to Senco Gold & Diamonds WhatsApp Panel"}
           </CardDescription>
         </CardHeader>
         <CardContent>
