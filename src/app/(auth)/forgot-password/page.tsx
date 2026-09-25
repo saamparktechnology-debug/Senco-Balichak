@@ -86,9 +86,15 @@ export default function ForgotPasswordPage() {
           <div className="mb-3 flex items-center justify-center">
             <BrandLogo size="lg" priority={true} />
           </div>
+<<<<<<< HEAD
           <CardTitle className="text-xl text-foreground">{t("title")}</CardTitle>
           <CardDescription className="text-muted-foreground">
             {t("desc")}
+=======
+          <CardTitle className="text-xl font-bold text-foreground">Reset password</CardTitle>
+          <CardDescription className="text-muted-foreground">
+            Enter your email to receive password reset instructions for your Senco Gold & Diamonds account
+>>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
           </CardDescription>
         </CardHeader>
         <CardContent>

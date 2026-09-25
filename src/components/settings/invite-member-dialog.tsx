@@ -135,7 +135,11 @@ export function InviteMemberDialog({
         // string if `account` hasn't loaded yet (shouldn't happen
         // — the dialog requires admin+ which requires a loaded
         // profile — but stay safe).
+<<<<<<< HEAD
         accountName: account?.name ?? t('fallbackAccountName'),
+=======
+        accountName: account?.name ?? 'Senco Gold & Diamonds (Balichak)',
+>>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
       });
       onCreated();
     } catch (err) {
@@ -164,7 +168,11 @@ export function InviteMemberDialog({
     // they're being invited to before clicking through. This matters
     // for users in multi-team contexts where "our wacrm account"
     // wouldn't be enough to disambiguate.
+<<<<<<< HEAD
     const accountName = result?.accountName ?? t('fallbackAccountName');
+=======
+    const accountName = result?.accountName ?? 'Senco Gold & Diamonds (Balichak)';
+>>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
     const message = t('whatsappMessage', { accountName, expiresInDays: result?.expiresInDays ?? 0, url });
     return `https://wa.me/?text=${encodeURIComponent(message)}`;
   }

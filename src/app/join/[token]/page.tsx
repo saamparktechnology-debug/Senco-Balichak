@@ -286,6 +286,7 @@ export default function JoinPage() {
       <div className="mb-3 flex items-center justify-center">
         <BrandLogo size="lg" priority={true} />
       </div>
+<<<<<<< HEAD
       <CardTitle className="text-xl text-foreground">
         {t.rich('invitedTo', {
           name: peek.account_name,
@@ -306,6 +307,23 @@ export default function JoinPage() {
               {chunks}
             </span>
           ),
+=======
+      <CardTitle className="text-xl font-bold text-foreground">
+        You&apos;re invited to join{' '}
+        <span className="text-primary">{peek.account_name}</span>
+      </CardTitle>
+      <CardDescription className="text-muted-foreground">
+        on Senco Gold & Diamonds (Balichak) WhatsApp Panel as{' '}
+        <span className="inline-flex items-center gap-1 font-medium text-foreground">
+          <ShieldCheck className="size-3.5 text-primary" />
+          {ROLE_LABEL[peek.role]}
+        </span>
+        . Link valid until{' '}
+        {new Date(peek.expires_at).toLocaleDateString(undefined, {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+>>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
         })}
       </CardDescription>
     </CardHeader>
