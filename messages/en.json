@@ -15,12 +15,8 @@
     "createAccount": "Create account"
   },
   "Sidebar": {
-<<<<<<< HEAD
     "title": "Senco Gold & Diamonds WhatsApp Panel",
     "primaryNav": "Primary",
-=======
-    "title": "Senco Gold & Diamonds (Balichak) WhatsApp Panel",
->>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
     "dashboard": "Dashboard",
     "inbox": "Inbox",
     "notifications": "Notifications",
@@ -1404,11 +1400,7 @@
       "labelTooLong": "Label must be {max} characters or fewer",
       "copied": "Invite link copied",
       "clipboardBlocked": "Clipboard blocked — copy the link manually",
-<<<<<<< HEAD
       "whatsappMessage": "Join {accountName} on Senco Gold & Diamonds WhatsApp Panel using this link (valid for {expiresInDays} days): {url}"
-=======
-      "whatsappMessage": "Join {accountName} on Senco Gold & Diamonds (Balichak) WhatsApp Panel using this link (valid for {expiresInDays} days): {url}"
->>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
     },
     "tagsAndFields": {
       "title": "Fields & tags",

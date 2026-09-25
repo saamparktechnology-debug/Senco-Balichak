@@ -141,19 +141,10 @@ function SignupPageInner() {
             <BrandLogo size="lg" priority={true} />
           </div>
           <CardTitle className="text-xl font-bold font-serif tracking-wide text-foreground">
-<<<<<<< HEAD
             {inviteToken ? t("titleJoin") : t("title")}
           </CardTitle>
           <CardDescription className="text-muted-foreground">
             {inviteToken ? t("descJoin") : t("desc")}
-=======
-            {inviteToken ? "Create account & join" : "Create your Senco Gold & Diamonds account"}
-          </CardTitle>
-          <CardDescription className="text-muted-foreground">
-            {inviteToken
-              ? "Verify your email, then accept the invitation to join your team."
-              : "Get started with Senco Gold & Diamonds (Balichak) WhatsApp Panel"}
->>>>>>> 4e86411c8923c66fd1435c65ac974fa5abcf29ec
           </CardDescription>
         </CardHeader>
         <CardContent>
